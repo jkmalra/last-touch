@@ -45,3 +45,6 @@ export default class MyPlugin extends Plugin {
 		await this.saveData(this.settings);
 	}
 }
+// gothough the code, and understand it.
+// step 2 complete, need to understad the code.
+// and continue to step 3.
