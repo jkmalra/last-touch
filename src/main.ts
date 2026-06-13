@@ -1,3 +1,8 @@
+import {
+	LastTouchView,
+	VIEW_TYPE_LAST_TOUCH
+} from './view/LastTouchView';
+
 import { Plugin } from 'obsidian';
 
 import {
@@ -11,6 +16,19 @@ export default class MyPlugin extends Plugin {
 
 	async onload() {
 		await this.loadSettings();
+
+		this.registerView(
+			VIEW_TYPE_LAST_TOUCH,
+			(leaf) => new LastTouchView(leaf)
+		);
+
+		this.addCommand({
+			id: 'open-last-touch-view',
+			name: 'Open Last Touch View',
+			callback: async () => {
+				await this.activateView();
+			}
+	});
 	}
 
 	onunload() {}
