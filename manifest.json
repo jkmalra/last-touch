@@ -1,7 +1,7 @@
 {
 	"id": "last-touch",
 	"name": "last-touch",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"minAppVersion": "1.0.0",
 	"description": "See When and Why you last edited a note.",
 	"author": "Obsidian",
