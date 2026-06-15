@@ -44,7 +44,23 @@ export default class MyPlugin extends Plugin {
 	async saveSettings() {
 		await this.saveData(this.settings);
 	}
+
+	
+
+	async activateView() {
+    const leaf = this.app.workspace.getRightLeaf(false);
+
+    if (!leaf) {
+        return;
+    }
+
+    await leaf.setViewState({
+        type: VIEW_TYPE_LAST_TOUCH,
+        active: true
+    });
+
+    this.app.workspace.revealLeaf(leaf);
+	}
+
+
 }
-// gothough the code, and understand it.
-// step 2 complete, need to understad the code.
-// and continue to step 3.
