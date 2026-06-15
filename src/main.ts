@@ -11,7 +11,7 @@ import {
 } from './settings';
 
 
-export default class MyPlugin extends Plugin {
+export default class LastTouchPlugin extends Plugin {
 	settings!: MyPluginSettings;
 
 	async onload() {

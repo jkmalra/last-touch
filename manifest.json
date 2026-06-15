@@ -4,8 +4,6 @@
 	"version": "0.0.1",
 	"minAppVersion": "1.0.0",
 	"description": "See When and Why you last edited a note.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"author": "Jaskaran Malra",
 	"isDesktopOnly": false
 }
