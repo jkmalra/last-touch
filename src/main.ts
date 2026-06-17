@@ -20,7 +20,10 @@ export default class LastTouchPlugin extends Plugin {
 
 		this.registerView(
 			VIEW_TYPE_LAST_TOUCH,
-			(leaf) => new LastTouchView(leaf)
+			(leaf) => new LastTouchView(
+				leaf,
+				this.app
+			)
 		);
 
 		this.addCommand({
