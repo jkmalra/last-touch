@@ -7,12 +7,12 @@ import { Plugin } from 'obsidian';
 
 import {
 	DEFAULT_SETTINGS,
-	MyPluginSettings,
+	LastTouchSettings,
 } from './settings';
 
 
 export default class LastTouchPlugin extends Plugin {
-	settings!: MyPluginSettings;
+	settings!: LastTouchSettings;
 
 	async onload() {
 		await this.loadSettings();
@@ -37,7 +37,7 @@ export default class LastTouchPlugin extends Plugin {
 		this.settings = Object.assign(
 			{},
 			DEFAULT_SETTINGS,
-			(await this.loadData()) as Partial<MyPluginSettings>,
+			(await this.loadData()) as Partial<LastTouchSettings>,
 		);
 	}
 
