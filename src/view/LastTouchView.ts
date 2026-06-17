@@ -12,7 +12,7 @@ export class LastTouchView extends ItemView {
     }
 
     getDisplayText(): string {
-        return "Last Touch";
+        return " Last Touch";
     }
 
     async onOpen() {

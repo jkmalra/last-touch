@@ -14,6 +14,7 @@ import {
 export default class LastTouchPlugin extends Plugin {
 	settings!: LastTouchSettings;
 
+//------------------------------------------------
 	async onload() {
 		await this.loadSettings();
 
@@ -32,7 +33,9 @@ export default class LastTouchPlugin extends Plugin {
 	}
 
 	onunload() {}
+//------------------------------------------------
 
+//------------------------------------------------
 	async loadSettings() {
 		this.settings = Object.assign(
 			{},
@@ -45,6 +48,8 @@ export default class LastTouchPlugin extends Plugin {
 		await this.saveData(this.settings);
 	}
 
+//	THESE USE: this.loadData() and this.saveData()
+//------------------------------------------------
 	
 
 	async activateView() {
