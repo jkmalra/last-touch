@@ -21,7 +21,7 @@ export class LastTouchView extends ItemView {
         container.empty();
 
         container.createEl("h2", {
-            text: "Last Touch"
+            text: " Last Touch"
         });
     }
 
