@@ -34,9 +34,18 @@ export class LastTouchView extends ItemView {
         text: " Last Touch"
     });
 
+    const activeFile = this.appRef.workspace.getActiveFile();
+
     container.createEl("p", {
-        text: " No file selected"
+        text: activeFile
+            ? `File: ${activeFile.name}`
+            : "No file selected"
     });
+
+    // container.createEl("p", {
+    //     text: " No file selected"
+    // });
+    
     }
 
     async onClose() {}
