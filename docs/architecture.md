@@ -25,3 +25,23 @@ LastTouchView created
 onOpen()
         ↓
 Display "Last Touch"
+
+
+## Phase 2: Show Current File + Last Modified Time
+
+adding:
+- current file name
+- last modified time
+
+Example:
+- File: AI Compliance.md
+- Last Edited: 2 hours ago
+
+Obsidian already know:
+- Current active file
+- Current active editor
+- File metadata
+- File path
+- File modified time
+
+> Need to fetch from Obsidian to plugin pannel
