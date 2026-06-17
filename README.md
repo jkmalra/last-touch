@@ -18,3 +18,11 @@
 	- see/understand link between these functions.
 	- step 2 complete, need to understad the code.
 	- step 3 need to understand.
+
+	- Update
+	- need to gothrough onOpen()
+	- fix file name twice appear as "text.md.md"
+	- NEXT
+	- add:
+		- File: Research.md
+		- Last Edited: Jun 17, 2026 7:42 PM
